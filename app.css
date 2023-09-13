@@ -1,0 +1,19 @@
+
+
+.carouselImg {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+
+.anchorTag {
+    text-decoration: none;
+    color: white;
+}
+.anchorTag:hover{
+    color: gray;
+    text-decoration: underline;
+}
