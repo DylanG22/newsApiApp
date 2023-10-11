@@ -1,7 +1,5 @@
 
-body{
-    background-color: rgb(165, 194, 255);
-}
+
 .carouselImg {
     width: calc(70vw - 100px);
     height: 55vh;
