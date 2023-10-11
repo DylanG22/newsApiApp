@@ -1,12 +1,15 @@
 
-
-.carouselImg {
-    width: 1000px;
-    height: 500px;
-    object-fit: cover;
+body{
+    background-color: rgb(165, 194, 255);
 }
+.carouselImg {
+    width: calc(70vw - 100px);
+    height: 55vh;
+    object-fit: fill;
+    border-radius: 5px;
+    padding: 0px 0px 0px 0px;
 
-
+}
 
 
 .anchorTag {
@@ -16,4 +19,20 @@
 .anchorTag:hover{
     color: gray;
     text-decoration: underline;
+}
+
+#sidebarDiv{
+    height: 100vh;
+    overflow:scroll;
+    padding:0px;
+}
+
+
+#carouselDiv {
+    margin:auto;
+    padding: 0px 50px 0px 50px;
+    width: 70vw;
+    justify-content: center;
+    height: 55vh;
+
 }

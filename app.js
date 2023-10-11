@@ -45,9 +45,9 @@ function createCarouselElement(img,head,body,url,c){
     textDiv.classList.add('carousel-caption');
     let h3 = document.createElement('h3');
     h3.append(createATag(url,head));
-    h3.classList.add("text-bg-dark");
+    addTextClasses(h3);
     let description = document.createElement('p');
-    description.classList.add("text-bg-dark")
+    addTextClasses(description);
     description.append(createATag(url,body))
     textDiv.append(h3);
     textDiv.append(description);
@@ -55,6 +55,11 @@ function createCarouselElement(img,head,body,url,c){
     carouselInner.append(itemDiv);
 }
 
+
+function addTextClasses(element){
+    element.classList.add("text-bg-dark");
+    element.classList.add("rounded");
+}
 
 function createATag(url,innerText){
     let link = document.createElement('a');
@@ -79,6 +84,3 @@ topicsDiv.addEventListener('click',function(e){
     getArticles(topic);
 })
 
-carouselAll.addEventListener('click',function(e){
-    console.log(e);
-})
